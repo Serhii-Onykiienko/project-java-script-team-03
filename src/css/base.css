@@ -3,19 +3,21 @@ html {
 }
 
 body {
-  font-family: 'Public Sans', sans-serif;
-  color: #fff;
-  background-color: #5e8a4d;
+  font-family: 'Mulish', sans-serif;
   font-weight: 400;
+  font-size: 18px;
   line-height: 1.5;
+  color: #000;
+  background-color: #fbf9f1;
 }
 
 h1 {
-  font-family: 'Chivo', sans-serif;
-  font-weight: 400;
+  font-family: 'Cormorant', sans-serif;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  color: #fff;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -25,11 +27,12 @@ h1 {
 }
 
 h2 {
-  font-family: 'Chivo', sans-serif;
-  font-weight: 400;
-  font-size: 36px;
+  font-family: 'Cormorant', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  color: #000;
 }
 
 @media only screen and (min-width: 1440px) {
