@@ -43,6 +43,12 @@
   font-size: 16px;
   gap: 12px;
   display: flex;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-links:hover,
+.footer-links:focus {
+  background-color: #e5e5e5;
+  border-radius: 6px;
 }
 .footer-ul-menu {
   display: flex;
