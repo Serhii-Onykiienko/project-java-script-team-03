@@ -1,3 +1,88 @@
-<section class="header" id="header">
-  <div class="container"></div>
-</section>
+<header class="header">
+  <div class="container header-container">
+    <a class="header-logo" href="./index.html" aria-label="Home">
+      <svg class="header-logo__icon" width="54" height="48" aria-hidden="true">
+        <use href="../img/sprite.svg#icon-company-logo"></use>
+      </svg>
+      <span class="visually-hidden">Maria Kovalenko Photography</span>
+    </a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="header-nav" aria-label="Main navigation">
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link" href="#about">About Me</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- DESKTOP CTA -->
+    <a class="header-btn btn" href="#contacts">Book a Session</a>
+
+    <!-- BURGER (mobile only) -->
+    <button
+      class="header-burger"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="header-icon" width="24" height="24" aria-hidden="true">
+        <use href="../img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-container container">
+      <div class="mobile-menu-top">
+        <a class="mobile-menu-logo" href="./index.html" aria-label="Home">
+          <svg
+            class="mobile-menu-logo__icon"
+            width="54"
+            height="48"
+            aria-hidden="true"
+          >
+            <use href="../img/sprite.svg#icon-company-logo"></use>
+          </svg>
+          <span class="visually-hidden">Maria Kovalenko Photography</span>
+        </a>
+
+        <button class="mobile-menu-close" type="button" aria-label="Close menu">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="../img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#about">About Me</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="mobile-menu-btn btn" href="#contacts">Book a Session</a>
+    </div>
+  </div>
+</header>
