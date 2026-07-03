@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/js/faq.js"],"sourcesContent":["import Accordion from 'accordion-js';\n\nnew Accordion('.faq-list', {\n  duration: 300,\n  showMultiple: false,\n  elementClass: 'faq-item',\n  triggerClass: 'faq-trigger',\n  panelClass: 'faq-panel',\n  activeClass: 'faq-item--active',\n});\n"],"names":["Accordion"],"mappings":"svBAEA,IAAIA,EAAU,YAAa,CACzB,SAAU,IACV,aAAc,GACd,aAAc,WACd,aAAc,cACd,WAAY,YACZ,YAAa,kBACf,CAAC"}
