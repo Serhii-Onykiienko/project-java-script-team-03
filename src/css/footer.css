@@ -8,30 +8,31 @@
   border: 2px solid #000;
   border-radius: 24px;
   align-items: center;
+  padding: 48px 20px;
+
   
 }
 @media only screen and (min-width: 768px) {
   .footer-wrapper {
     flex-direction: row;
+    padding: 48px;
   }
 }
 .footer-text {
   font-size: 14px;
   text-align: center;
+  text-align: left;
 }
 .footer-logo-text-wrapper {
-  margin: 0px 20px;
-  padding-top: 48px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 12px;
 }
 @media only screen and (min-width: 768px) {
   .footer-logo-text-wrapper {
-    margin-left: 48px;
     margin-bottom: auto;
     margin-right: auto;
+    width: 263px;
   }
 }
 .footer-menu-text {
@@ -75,7 +76,7 @@
   padding: 8px 0;
 }
 .footer-nav {
- margin: 24px 20px 40px 20px;
+ margin: 24px 0 40px;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -84,27 +85,23 @@
   .footer-nav {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 48px;
     margin-right: 40px;
-    padding-bottom: 48px;
-    margin-left: 128px;
     align-items: baseline;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .footer-nav {
+    margin-right: 132px;
+  }
+}
 .footer-contacts {
- margin: 0 20px;
- padding-bottom: 48px;
  display: flex;
  flex-direction: column;
  align-items: center;
 }
 @media only screen and (min-width: 768px) {
   .footer-contacts {
-    padding-top: 48px;
-    margin-left: 40px;
     margin-bottom: auto;
-    margin-right: 48px;
-    padding-bottom: 0;
     align-items: baseline;
   }
 }
