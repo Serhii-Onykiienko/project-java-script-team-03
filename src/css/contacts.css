@@ -25,7 +25,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 120px;
+        gap: 24px;
     }
 }
 
@@ -35,6 +35,12 @@
 
     @media screen and (min-width: 1440px) {
         max-width: 644px;
+
+        .contact__title_decor {
+        width: 300px;
+        height: 20px;
+        margin-bottom: 24px;
+        }
     }
 }
 
@@ -59,10 +65,10 @@
     max-width: 644px;
     font-size: 16px;
     line-height: 1.7;
-    color: #6d6d6d;
+    color: #000000;
 
     @media screen and (min-width: 768px) {
-        width: 644px;
+    
     }
 }
 
@@ -88,7 +94,7 @@
 .contact-list__address {
     font-size: 18px;
     line-height: 1.5;
-    color: #121212;
+    color: #000000;
     text-decoration: none;
     transition: color .3s ease;
 }
@@ -176,11 +182,11 @@
     border: 1px solid #DCC110;
 }
 
-.button-text {
+.contact-button-text {
     transition: opacity .3s;
 }
 
-.loader {
+.contact-loader {
     position: absolute;
 
     width: 22px;
@@ -194,7 +200,7 @@
     animation: spin .8s linear infinite;
 }
 
-.hidden {
+.contact-hidden {
     display: none;
 }
 

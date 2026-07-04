@@ -1,5 +1,6 @@
+import { Notify } from 'notiflix';
 import { createOrder } from './api';
-import { openModal } from './modal';
+import { openModal } from './success-modal';
 
 const form = document.querySelector('#contactForm');
 
