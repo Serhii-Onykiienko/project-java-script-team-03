@@ -44,15 +44,31 @@
     }
 }
 
+.contact__title_decor{
+    width: 300px;
+    height: 20px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        width: 250px;
+        height: 20px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 300px;
+        height: 20px;
+    }
+}
+
 .contact__title {
-    width: 644px;
-    height: 58px;
+    text-align: center;
     margin-bottom: 24px;
     line-height: 1.1;
     color: #000;
 
     @media screen and (min-width: 768px) {
         font-size: 52px;
+        text-align: left;
     }
 
     @media screen and (min-width: 1440px) {
@@ -61,6 +77,7 @@
 }
 
 .contact__text {
+    text-align: center;
     margin-bottom: 40px;
     max-width: 644px;
     font-size: 16px;
@@ -68,7 +85,7 @@
     color: #000000;
 
     @media screen and (min-width: 768px) {
-    
+        text-align: left;
     }
 }
 
