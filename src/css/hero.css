@@ -58,12 +58,13 @@
   border-radius: 6px;
   width: 100%;
   height: 44px;
+  background-color: #e6d357;
   background-color: #fff;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-link:focus,
+.hero-link:focus-visible,
 .hero-link:hover {
   border: 2px solid #dcc110;
 }
@@ -99,13 +100,18 @@
     width: 159px;
 
     background-color: #dcc110;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .hero-link:focus,
 .hero-link:hover {
   background-color: #fff;
+}
+
+.hero-link:active {
+  box-shadow:
+    inset 0 2px 4px -2px rgba(0, 0, 0, 0.06),
+    inset 0 4px 8px -2px rgba(0, 0, 0, 0.1);
+  background: #e6d357;
 }
 /* #endregion */
 
