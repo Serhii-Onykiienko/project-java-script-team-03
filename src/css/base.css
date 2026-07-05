@@ -53,3 +53,16 @@ h2 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.decor::before {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 21px;
+  margin: 0 auto 24px;
+
+  background-image: url('/img/decoration.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
