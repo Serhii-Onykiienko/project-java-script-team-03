@@ -1,0 +1,131 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 335px;
+    height: 659px;
+    max-width: 768px;
+    background-color: var(--color-scheme-2-background, #fcfbf7);
+    border-radius: 24px;
+    padding: 64px 20px;
+
+    box-shadow:
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+@media (min-width: 768px) {
+    .modal {
+        padding: 64px 32px;
+        width: 704px;
+        height: 700px;
+        max-width: 768px;
+    }
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-scheme-1-text, #2e2f42);
+    transition:
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+    .modal-close-btn {
+        top: 24px;
+        right: 24px;
+    }
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: #404bbf;
+    transform: scale(1.1);
+}
+
+.modal-close-icon {
+    stroke: currentColor;
+    fill: none;
+}
+
+.modal-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+.modal-img-wrapper {
+    width: 100%;
+    max-width: 295px;
+    height: 207px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .modal-img-wrapper {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.modal-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.modal-text {
+    text-align: center;
+}
+
+@media (min-width: 1440px) {
+    .modal {
+        padding: 64px;
+        width: 768px;
+    }
+}

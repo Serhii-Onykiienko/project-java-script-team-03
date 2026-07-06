@@ -19,8 +19,12 @@
   "dependencies": {
     "accordion-js": "^3.4.1",
     "axios": "^1.18.1",
+    "izitoast": "^1.4.0",
     "notiflix": "^3.2.8",
     "swiper": "^14.0.1",
+    "accordion-js": "^3.4.1",
+    "axios": "^1.18.1",
+    "izitoast": "^1.4.0",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
