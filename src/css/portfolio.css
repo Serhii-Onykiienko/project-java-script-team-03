@@ -53,28 +53,15 @@
 .loader {
     width: 48px;
     height: 48px;
-    left: 40rem;
-    top: 5rem;
+    left: calc(( 100% / 2 ) - 24px ); 
+    top: calc((100% / 2) - 24px);
     border-width: 3px;
     border-style: dashed solid solid dotted;
     border-color: #FF3D00 #FF3D00 transparent #FF3D00;
     border-radius: 50%;
-    display: inline-block;
-    position: fixed;
-    box-sizing: border-box;
+    position: fixed; 
     animation: rotation 1s linear infinite;
     visibility: hidden;
-}
-
-.loader::after {
-    content: '';
-    box-sizing: border-box;
-    position: fixed;
-    left: 40rem;
-    top: 5rem;
-    border: 10px solid transparent;
-    border-right-color: #FF3D00;
-    transform: rotate(-40deg);
 }
 
 @keyframes rotation {
