@@ -1,0 +1,109 @@
+.swiper {
+  /* --swiper-navigation-color: #000000;
+  --swiper-navigation-size: 48px;
+  --swiper-navigation-top-offset: 95%;
+  --swiper-navigation-sides-offset: 100px; */
+
+  --swiper-pagination-color: #000000;
+  /* --swiper-pagination-left: auto;
+  --swiper-pagination-right: 8px;
+  --swiper-pagination-bottom: 8px;
+  --swiper-pagination-top: auto;
+  --swiper-pagination-fraction-color: inherit;
+  --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+  --swiper-pagination-progressbar-size: 4px;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-inactive-opacity: 0.2; */
+  /* --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px; */
+}
+
+.feedbacks-textual-wrapper {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.feedbacks-title {
+  text-align: center;
+}
+.feedbacks-text {
+  text-align: center;
+}
+.feedbacks-content-list {
+  margin-bottom: 32px;
+}
+.feedbacks-content-item {
+  border: 2px solid #000000;
+  border-radius: 16px;
+  background: #faf7e6;
+}
+.feedbacks-content-item-wrapper {
+  height: 328px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feedbacks-content-names {
+  font-weight: 600;
+  font-size: 16px;
+}
+.feedbacks-content-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feedbacks-content-button-wrapper {
+  display: flex;
+  gap: 16px;
+}
+.custom-swiper-pagination-wrapper{
+ width: 40px;
+ padding-left: 20px;
+}
+.custom-swiper-button-prev.swiper-button-disabled,
+.custom-swiper-button-next.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.feedbacks-content-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  padding: 10px;
+  background: #ffffff;
+}
+.feedbacks-content-button:hover,
+.feedbacks-content-button:focus {
+  background: #e6d357;
+}
+.feedbacks-content-button:active {
+  background: #faf7e6;
+}
+@media screen and (min-width: 768px) {
+  .feedbacks-text {
+    margin: 0 auto;
+    max-width: 610px;
+  }
+  .feedbacks-content-item-wrapper {
+    height: 412px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedbacks-text {
+    max-width: 768px;
+  }
+  .feedbacks-content-item-wrapper {
+    height: 274px;
+    padding: 32px;
+  }
+}
