@@ -1,13 +1,11 @@
 .contact {
-    padding: 80px 0;
+    padding: 64px 0;
     background-color: #FBF9F1;
 
-    @media screen and (min-width: 768px) {
-        padding: 100px 0;
-    }
+    @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 1440px) {
-        padding: 120px 0;
+        padding: 92px 0;
     }
 }
 
@@ -15,7 +13,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    gap: 60px;
+    gap: 32px;
 
     @media screen and (min-width: 768px) {
         gap: 80px;
@@ -37,14 +35,14 @@
         max-width: 644px;
 
         .contact__title_decor {
-        width: 300px;
-        height: 20px;
-        margin-bottom: 24px;
+            width: 300px;
+            height: 20px;
+            margin-bottom: 24px;
         }
     }
 }
 
-.contact__title_decor{
+.contact__title_decor {
     width: 300px;
     height: 20px;
     margin-bottom: 12px;
@@ -78,9 +76,9 @@
 
 .contact__text {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     max-width: 644px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
     color: #000000;
 
@@ -89,10 +87,14 @@
     }
 }
 
+.contact-form__title {
+    font-size: 16px;
+}
+
 .contact-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 }
 
 .contact-list__item {
@@ -105,14 +107,15 @@
     width: 24px;
     height: 24px;
     fill: #000000;
+    stroke: black;
 }
 
 .contact-list__link,
 .contact-list__address {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     color: #000000;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color .3s ease;
 }
 
@@ -142,7 +145,7 @@
 
 .contact-form__input,
 .contact-form__textarea {
-    width: 644px;
+    width: 100%;
     height: 40px;
     padding: 18px 20px;
     margin-top: 8px;
@@ -161,7 +164,7 @@
 }
 
 .contact-form__textarea {
-    width: 644px;
+    width: 100%;
     height: 180px;
 }
 
@@ -179,7 +182,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 310px;
+    width: 100%;
     height: 44px;
 
     border: none;
@@ -191,6 +194,12 @@
     cursor: pointer;
 
     transition: .3s;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 310px;
+    }
+
 }
 
 .contact-form__button:hover {
