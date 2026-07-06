@@ -122,3 +122,10 @@
 .modal-text {
   text-align: center;
 }
+
+@media (min-width: 1440px) {
+  .modal {
+    padding: 64px;
+    width: 768px;
+  }
+}
