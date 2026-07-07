@@ -17,7 +17,6 @@
             <use href="/img/sprite.svg#icon-mail"></use>
           </svg>
 
-          <a href="mailto:info@mariakovalenko.com" class="contact-list__link contact-form">
           <a
             href="mailto:info@mariakovalenko.com"
             class="contact-list__link contact-form"
@@ -42,8 +41,11 @@
           </svg>
 
           <address class="contact-list__address contact-form">
-            <a href="https://www.google.com/maps/place/Raschdorffstra%C3%9Fe+2,+13409+Berlin-Bezirk+Reinickendorf,+%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F/@52.5650588,13.3594928,15z/data=!4m6!3m5!1s0x47a853ca446de2a9:0xc962cacc3995edea!8m2!3d52.5679038!4d13.3628084!16s%2Fg%2F11q2n92wm5?hl=ru&entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D"
-              class="contact-list__link" target="_blank">
+            <a
+              href="https://www.google.com/maps/place/Raschdorffstra%C3%9Fe+2,+13409+Berlin-Bezirk+Reinickendorf,+%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F/@52.5650588,13.3594928,15z/data=!4m6!3m5!1s0x47a853ca446de2a9:0xc962cacc3995edea!8m2!3d52.5679038!4d13.3628084!16s%2Fg%2F11q2n92wm5?hl=ru&entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D"
+              class="contact-list__link"
+              target="_blank"
+            >
               Raschdorffstraße 2-26, 13409 Berlin, Germany
             </a>
           </address>
@@ -55,19 +57,34 @@
       <form class="contact-form" id="contactForm" autocomplete="off">
         <label class="contact-form__label">
           <p>Name*</p>
-          <input class="contact-form__input" type="text" name="name" placeholder="Maria" required />
+          <input
+            class="contact-form__input"
+            type="text"
+            name="name"
+            placeholder="Maria"
+            required
+          />
         </label>
 
         <label class="contact-form__label">
           <p>Phone*</p>
-          <input class="contact-form__input" type="tel" name="phone" placeholder="+1 (202) 111 2323" required />
+          <input
+            class="contact-form__input"
+            type="tel"
+            name="phone"
+            placeholder="+1 (202) 111 2323"
+            required
+          />
         </label>
 
         <label class="contact-form__label">
           <p>Message</p>
-          <textarea class="contact-form__textarea" name="comment"
+          <textarea
+            class="contact-form__textarea"
+            name="comment"
             placeholder="Tell me a little about you and your special day. Don't forget to include your wedding date, venue, and what you're most excited about..."
-            rows="6"></textarea>
+            rows="6"
+          ></textarea>
         </label>
 
         <button class="contact-form__button" type="submit">
