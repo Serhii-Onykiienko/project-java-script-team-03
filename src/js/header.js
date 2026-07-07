@@ -2,7 +2,9 @@ const refs = {
   burgerBtn: document.querySelector('.header-burger'),
   closeBtn: document.querySelector('.mobile-menu-close'),
   mobileMenu: document.querySelector('.mobile-menu'),
-  mobileMenuLinks: document.querySelectorAll('.mobile-menu-link'),
+  mobileMenuLinks: document.querySelectorAll(
+    '.mobile-menu-link, .mobile-menu-btn'
+  ),
 };
 // ----------open/close menu------------
 function openMenu() {
@@ -10,6 +12,7 @@ function openMenu() {
   document.body.classList.add('no-scroll');
   refs.burgerBtn.setAttribute('aria-expanded', 'true');
   refs.mobileMenu.setAttribute('aria-hidden', 'false');
+
   refs.closeBtn.focus();
 }
 
