@@ -20,7 +20,6 @@ const fetchFeedbacks = async page => {
         page,
       },
     });
-    console.log(fetchedData.data);
     return fetchedData.data;
   } catch (error) {
     console.log(error);
